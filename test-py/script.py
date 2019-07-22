@@ -1,10 +1,11 @@
 import sys
 import os
-import math
-import chardet.langbulgarianmodel
+import requests
 
 print(sys.version)
 print(sys.executable)
-print("Hello World")
 
+r = requests.get("https://www.google.com")
+
+print(r.status_code)
 # end comment
