@@ -10,5 +10,7 @@ r = requests.get("https://www.google.com")
 print(r.status_code)
 
 
-nam = input('Who are you?')
-print('Welcome ' + nam)
+rate = input('What is the job rate? ')
+hours = input('How many hours per week? ')
+pay = float(rate) * float(hours)
+print('The pay is: ' + '$' + str(pay))
