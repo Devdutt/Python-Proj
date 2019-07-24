@@ -13,4 +13,8 @@ print(r.status_code)
 rate = input('What is the job rate? ')
 hours = input('How many hours per week? ')
 pay = float(rate) * float(hours)
-print('The pay is: ' + '$' + str(pay))
+
+if pay < 5000:
+    print('The pay is: ' + '$' + str(pay))
+elif pay > 5001:
+    print('This pay is higher than $5001.00' + str(pay))
