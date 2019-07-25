@@ -5,7 +5,7 @@ import math
 
 print(sys.version)
 print(sys.executable)
-
+""" 
 r = requests.get("https://www.google.com")
 print(r.status_code)
 
@@ -17,4 +17,7 @@ pay = float(rate) * float(hours)
 if pay < 5000:
     print('The pay is: ' + '$' + str(pay))
 elif pay > 5001:
-    print('This pay is higher than $5001.00' + str(pay))
+    print('This pay is higher than $5001.00' + str(pay)) """
+
+maxChar = max(input("Please type some words: "))
+print(maxChar)
