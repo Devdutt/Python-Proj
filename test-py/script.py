@@ -1,5 +1,5 @@
 import sys
-import os
+from os import rename
 import requests
 import math
 
