@@ -12,15 +12,16 @@ print(r.status_code)
 """ maxChar = max(input("Please type some words: "))
 print(maxChar) """
 
-l_number = -1
-print(l_number)
+smallest = None
+print(smallest)
 setOfNumbers = [23, 3091, 3, 55, 9, 0, 8, 76, 900]
 
 for i in setOfNumbers:
-    if i > l_number:
-        l_number = i
-        print("largest Number so far is ", l_number)
+    if smallest == None:
+        smallest = i
+    print(i)
+    if i < smallest:
+        smallest = i
 
-print("Done! the largest number is", l_number)
-
+print("The Smallest Number is ", smallest)
 # Add comments here.....
