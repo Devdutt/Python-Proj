@@ -9,10 +9,14 @@
 (a, b) = ("jack", 4)
 print(b)
 
-d = {"h": 10, "b": 19, "c": 20}
-# t = list()
+d = {"h": 10, "b": 19, "c": 20, "g": 10}
+a_list = list()
 t = sorted(d.items())
-
+# t = d.items()
 for i, j in t:
-    print(i, j)
+    a_list.append((j, i))
+print(a_list)
 
+a_list.sort(reverse=True)
+
+print(a_list)
